@@ -29,7 +29,6 @@ public class Principal {
 		celularBasico = fabrica.criarCelularBasico();
 		System.out.println(celularSmartphone.getDadosSmartphone());
 		System.out.println(celularBasico.getDadosCelularBasico());
-
 	}
 
 }
