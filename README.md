@@ -1,4 +1,8 @@
-"# padroes_arquiteturais" 
+### Padrões Arquiteturais e GOF com JAVA.
+
+O tempo é o recurso mais escasso e valioso nos dias de hoje. A vida contemporânea nos impele a desenvolver sistemas reusáveis e com alta qualidade em prazos cada vez menores. Isso não é uma tarefa fácil, principalmente para iniciantes.
+
+Os padrões de projeto nos oferecem descrições do núcleo de soluções que podem ser empregadas em diversas etapas do desenvolvimento.
 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                         ABSTRACT FACTORY
@@ -11,6 +15,8 @@ Deve-se aplicá-lo quando:
 * Uma família de produtos relacionados for projetada para uso conjunto e você for implementar essa restrição.
 * Quiser fornecer uma biblioteca de classes e revelar sua interface e não sua implementação.
  
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Abstract_Factory.png" width="500" />
+ 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             ADAPTER
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -20,7 +26,9 @@ Deve-se aplicá-lo quando:
 * Quiser usar uma classe existente, mas sua interface não corresponde à interface de que necessita.
 * Quiser criar uma classe reutilizável que coopere com classes não relacionadas ou não previstas, ou seja, classes que não necessariamente tenham interfaces compatíveis.
 * (somente para adaptadores de objetos) Precisar usar várias subclasses existentes, porém, for impraticável adaptar essas interfaces criando subclasses para cada uma. Um Adaptor de objeto pode adaptar a interface da sua classe mãe. 
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Adapter.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                               BUILDER
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -29,7 +37,9 @@ Objetivo: Separar a construção de um objeto complexo da sua representação de
 Deve-se aplicá-lo quando:
 * O algoritmo para criação de um objeto complexo for independente das partes que compõem o objeto e dependendo de como elas são montadas.
 * O processo de construção permitir diferentes representações para o objeto que for construído.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Builder.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                         CHAIN OF RESPONSABILITY
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -39,6 +49,8 @@ Deve-se aplicá-lo quando:
 * Mais de um objeto pode tratar uma solicitação e o objeto que o tratará não é conhecido a priori. O objeto que trata a solicitação deve ser escolhido automaticamente.
 * Quiser emitir uma solicitação para um dentre vários objetos, sem especificar explicitamente o receptor.
 * O conjunto de objetos que pode tratar uma solicitação deverá ser especificado dinamicamente.
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Chain%20of%20Responsability.png" width="500" />
 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             COMMAND
@@ -51,6 +63,8 @@ Deve-se aplicá-lo quando:
 * Suportar desfazer operações.
 * Suportar o registro (logging) de mudanças de maneiras que possam ser reaplicadas no caso de uma queda de sistema.
 * Estruturar um sistema em torno de operações de alto nível construídas sobre operações primitivas.
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Command.png" width="500" />
  
 ----------------------------------------------------------------------------------------------------------------------------------
                                                               COMPOSITE
@@ -62,6 +76,8 @@ Deve-se aplicá-lo quando:
 * Quiser que os clientes sejam capazes de ignorar a diferença entre composições de objetos e objetos individuais.
 * Os clientes tratarem todos os objetos na estrutura composta de maneira uniforme.
 
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Composite.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                               DECORATE
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -71,6 +87,8 @@ Deve-se aplicá-lo quando:
 * For para acrescentar responsabilidades a objetos individuais de forma dinâmica e transparente, ou seja, sem afetar outros objetos.
 * For para responsabilidades que podem ser removidas.
 * A extensão através do uso de subclasses não for prática.
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Decorate.png" width="500" />
  
 ----------------------------------------------------------------------------------------------------------------------------------
                                                                 FACADE
@@ -82,6 +100,8 @@ Deve-se aplicá-lo quando:
 * Existirem muitas dependências entre clientes e classes de implementação de uma abstração.
 * Se deseja estruturar os subsistemas em camadas.
  
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Facade.png" width="500" />
+ 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                           FACTORY METHOD
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -91,6 +111,8 @@ Deve-se aplicá-lo quando:
 * Uma classe não puder antecipar a classe de objetos que for criada.
 * Uma classe quiser que suas subclasses especifiquem os objetos que ela cria.
 * As classes delegarem responsabilidades para uma dentre várias subclasses auxiliares, e se deseja localizar o conhecimento de qual subclasse auxiliar implementa a delegação.
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Factory_Method.png" width="500" />
 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                            FLYWEIGHT
@@ -103,7 +125,9 @@ Deve-se aplicá-lo quando:
 * A maioria dos estados de objetos se tornar extrínseca.
 * Muitos grupos de objetos puderem ser substituídos por relativamente poucos objetos compartilhados, uma vez que estados extrínsecos são removidos.
 * A aplicação não depender da identidade dos objetos, uma vez que objetos flyweights podem ser compartilhados, testes de identidade produzirão o valor verdadeiro para objetos conceitualmente distintos.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Flyweight.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                        FRONT CONTROLLER
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -115,8 +139,10 @@ Deve-se aplicá-lo quando:
 * Se deseja separar a lógica de processamento do sistema da visualização.
 * Se deseja centralizar os pontos de acesso controlados no sistema.
  
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Front_Controller.png" width="500" /> 
+
 ----------------------------------------------------------------------------------------------------------------------------------
-                                                          INTERATOR
+                                                           ITERATOR
 ----------------------------------------------------------------------------------------------------------------------------------
 Objetivo: Fornecer uma maneira de acessar sequencialmente os elementos de um objeto agregado sem expor sua representação subjacente.
 
@@ -124,7 +150,9 @@ Deve-se aplicá-lo quando:
 * For acessar os conteúdos de um objeto agregado sem expor sua representação interna.
 * For suportar múltiplos percursos de objetos agregados.
 * For fornecer uma interface uniforme que percorra diferentes estruturas agregadas (ou seja, para suportar a iteração polimórfica).
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Iterator.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                           INTERPRETER
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -136,7 +164,9 @@ Deve-se aplicá-lo quando:
 * A maioria dos estados de objetos se tornar extrínseca.
 * Muitos grupos de objetos puderem ser substituídos por relativamente poucos objetos compartilhados, uma vez que estados extrínsecos são removidos.
 * A aplicação não depender da identidade dos objetos, uma vez que objetos flyweights podem ser compartilhados, testes de identidade produzirão o valor verdadeiro para objetos conceitualmente distintos.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Interpreter.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                           MEDIATOR
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -146,7 +176,9 @@ Deve-se aplicá-lo quando:
 * Um conjunto de objetos se comunica de maneiras bem-definidas, porém complexas. As interdependências resultantes são desestruturadas e difíceis de entender.
 * A reutilização de um objeto é difícil porque ele referencia e se comunica com muitos outros objetos.
 * Um comportamento que está distribuído entre várias classes deveria ser customizável, ou adaptável, sem excessiva especialização em subclasses.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Mediator.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             MEMENTO
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -155,7 +187,9 @@ Objetivo: Sem violar a encapsulação, capturar e externalizar um estado interno
 Deve-se aplicá-lo quando:
 * Um instantâneo de (alguma porção do) estado de um objeto deve ser salvo de maneira que possa ser restaurado para esse estado mais tarde.
 * Uma interface direta para obtenção do estado expõe detalhes de implementação e romperia o encapsulamento do objeto.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Memento.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             OBSERVER
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -166,7 +200,9 @@ Deve-se aplicá-lo quando:
 * Uma mudança em um objeto exige mudanças em outros, e você não sabe quantos objetos necessitam ser mudados.
 * Um objeto deveria ser capaz de notificar outros objetos sem fazer hipóteses, ou usar informações,
 sobre quem são esses objetos. Em outras palavras, quando não se deseja que esses objetos sejam fortemente acoplados.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Observer.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             PROTOTYPE
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -176,6 +212,8 @@ Deve-se aplicá-lo quando:
 * As classes a instanciar forem especificadas em tempo de execução.
 * Se deseja evitar a construção de uma hierarquia de classes de fábricas paralela à hierarquia de classes de produto.
 * As instâncias de uma classe puderem ter uma dentre poucas combinações diferentes de estados. 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Prototype.png" width="500" />
 
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             PROXY
@@ -188,7 +226,9 @@ Deve-se aplicá-lo quando:
 * Um virtual proxy criar objetos caros sob demanda.
 * Um protection proxy controlar o acesso ao objeto original.
 * Um smart reference for um substituto para um simples pointer que executa ações adicionais quando um objeto é acessado.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Proxy.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                           SINGLETON
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -197,7 +237,9 @@ Objetivo: Garantir que uma classe tenha somente uma instância e fornecer um pon
 Deve-se aplicá-lo quando:
 * Houver apenas uma instância de uma classe, e essa instância tiver que dar acesso aos clientes através de um ponto bem conhecido.
 * A única instância tiver que ser extensível através de subclasses, possibilitando aos clientes usar uma instância estendida sem alterar o seu código.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Singleton.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             STATE
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -206,7 +248,9 @@ Objetivo: Permitir que objeto altere seu comportamento quando seu estado interno
 Deve-se aplicá-lo quando:
 * O comportamento do objeto depende do seu estado e ele pode mudar seu comportamento em tempo e execução, dependendo desse estado.
 * As operações têm comandos condicionais grandes, de várias alternativas, que dependem do estado do objeto. Esse estado é, normalmente, representado por uma ou mais constantes enumeradas. Frequentemente, várias operações conterão essa mesma estrutura condicional. O padrão state coloca cada ramo do comando adicional em uma classe separada. Isso lhe permite tratar o estado do objeto como um objeto propriamente dito, que pode variar independentemente de outro objetos. 
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/State.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                             STRATEGY
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -218,7 +262,9 @@ Deve-se aplicá-lo quando:
 * As estratégias podem ser usadas quando essas variantes são implementadas como uma hierarquia de classes de algoritmos.
 * Um algoritmo usa dados dos quais os clientes não deveriam ter conhecimento. Use o padrão strategy para evitar a exposição das estruturas de dados complexas, específicas do algoritmo.
 * Uma classe define muitos comportamentos e aparecem em suas operações como múltiplos comandos condicionais da linguagem. Em vez de usar muitos comandos condicionais, mova os ramos condicionais relacionados para sua própria classe strategy.
- 
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Strategy.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                         TEMPLATE METHOD
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -229,6 +275,8 @@ Deve-se aplicá-lo quando:
 * O comportamento comum entre subclasses deve ser fatorado e concentrado numa classe comum para evitar duplicação de código.
 * For controlar extensões de subclasses. Você definir um método template que chama operações “gancho” em pontos específicos, permitindo, dessa forma, extensões somente nesses pontos.
 
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Template_Method.png" width="500" />
+
 ----------------------------------------------------------------------------------------------------------------------------------
                                                           VISITOR
 ----------------------------------------------------------------------------------------------------------------------------------
@@ -238,3 +286,5 @@ Deve-se aplicá-lo quando:
 * Uma estrutura de objetos contém muitas classes de objetos com interfaces que diferem, e quando deseja-se executar operações sobre esses objetos que dependem das suas classes concretas.
 * Muitas operações distintas e não relacionadas necessitam ser executadas sobre objetos de uma estrutura de objetos,  e deseja-se evitar “a poluição” das suas classes com essas operações. O Visitor permite manter juntas operações relacionadas, definindo-as em uma única classe. Quando a estrutura do objeto for compartilhada por muitas aplicações, use visitor para pôr operações somente naquelas aplicações que as necessitam.
 * As classes que definem a estrutura do objeto raramente mudam, porém, frequentemente deseja-se definir novas operações sobre a estrutura. A mudança das classes da estrutura do objeto requer a redefinição da interface para todos os visitantes, o que é potencialmente oneroso. Se as classes da estrutura do objeto mudam com frequência, provavelmente é melhor definir as operações nessas classes.
+
+<img src="https://github.com/dantasrafael/padroes_arquiteturais_java/blob/master/imgs/Visitor.png" width="500" />
