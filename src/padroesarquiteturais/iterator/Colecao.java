@@ -1,4 +1,4 @@
-package padroesarquiteturais.interator;
+package padroesarquiteturais.iterator;
 
 public class Colecao implements InterfaceColecao {
 	

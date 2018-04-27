@@ -9,7 +9,7 @@
  * 		  (ou seja, para suportar a iteração polimórfica).
  */
 
-package padroesarquiteturais.interator;
+package padroesarquiteturais.iterator;
 
 public class Principal {
 	
